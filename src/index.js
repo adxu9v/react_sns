@@ -10,7 +10,7 @@ import store from './store'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-  <BrowserRouter basename='https://adxu9v.github.io/react_sns'>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
    <React.StrictMode>
     <App />
   </React.StrictMode>
